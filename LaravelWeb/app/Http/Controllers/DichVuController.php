@@ -10,6 +10,16 @@ use App\NhanVien;
 
 class DichVuController extends Controller
 {
+
+    public function ShowInforDichVu(){
+        $infor = \DB::table('dichvu')
+                    ->join('phuongtien', 'dichvu.id_phuongtien', '=', 'phuongtien.id')
+                    ->select('dichvu.id', 'dichvu.TenDichVu', 'dichvu.Gia', 'phuongtien.TenPhuongTien')
+                    ->get();
+
+        return view('pages.Page_ShowInforDichVu',['infor'=>$infor]);        
+    }
+
     public function getDichVu(){
 
         $infor = \DB::table('dichvu')

@@ -11,6 +11,11 @@ use App\NhanVien;
 class NhanVienController extends Controller
 {
 
+    public function ShowInforNhanVien(){
+        $infor = NhanVien::all();
+        return view('pages.Page_ShowInforNhanVien',['infor'=>$infor]);
+    }
+
     public function getInfor(){
 
         $infor = NhanVien::all();
@@ -48,7 +53,7 @@ class NhanVienController extends Controller
     	$infor->save();
 
 
-    	return redirect()->route('Infor');
+    	return redirect()->route('NhanVien');
     }
 
     public function EditNhanVien($id_thomay){
@@ -76,7 +81,7 @@ class NhanVienController extends Controller
 
     	$infor->save();
 
-    	return redirect()->route('Infor');
+    	return redirect()->route('NhanVien');
     }
 
     public function Delete_Infof_NV($id_thomay){
@@ -85,6 +90,6 @@ class NhanVienController extends Controller
     	$id->delete();
     	$infor = NhanVien::all();
 
-    	return redirect()->route('Infor');
+    	return redirect()->route('NhanVien');
     }
 }

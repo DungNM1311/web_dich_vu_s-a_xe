@@ -17,8 +17,8 @@ Dịch Vụ Sửa Xe
 	        		<font style="vertical-align: inherit;">{{$tl->XepLoai}}</font>
 				</div>
 				<div>
-					<button onclick="window.location='{{ url("AddNhanVien")}}'" ><img src="image\add.png" width="30px" height= "30px" no-repeat ></button>	
-					<button onclick="window.location='{{ url("EditNhanVien/$tl->id") }}'" ><img src="image\repair.png" width="30px" height= "30px" no-repeat ></button>
+					<button onclick="window.location='{{route('AddNhanVien')}}'" ><img src="image\add.png" width="30px" height= "30px" no-repeat ></button>	
+					<button onclick="window.location='{{ url("NhanVien/EditNhanVien/$tl->id") }}'" ><img src="image\repair.png" width="30px" height= "30px" no-repeat ></button>
 					<button onclick="ConfirmDelete()"><img src="image\delete.png" width="30px" height= "30px" no-repeat></button>			
 				</div>				
 			</div>			
@@ -41,7 +41,7 @@ Dịch Vụ Sửa Xe
 			  var x = confirm("Are you sure you want to delete?");
 			  if (x)
 			  {
-			  	window.location.href = "{{ url("DeleteInfor/$tl->id") }}";
+			  	window.location.href = "{{ url("NhanVien/DeleteInfor/$tl->id") }}";
 			  	return true;
 
 			  }			    
