@@ -1,0 +1,33 @@
+
+		body{
+			width: 100%;
+			margin: 0px;
+			padding: 0px;
+		}
+		.content{
+			width: 60%;
+			max-width: 60%;
+			padding: 30px 60px;
+			display: block;
+			line-height: 1.6;
+			margin: 60px 230px;
+		}
+		.headding{
+			color: #f6303e;
+		    font-weight: 700;
+		    text-align: center;
+		    text-transform: uppercase;
+		    font-size: 24px;
+		    line-height: 24px;
+		    margin-bottom: 25px;
+		}
+		.textbold{
+			margin-bottom: 15px;
+			font-weight: 600!important;
+			font-size: 14px;
+			margin: 0 0 10px;
+		}
+		.sublist p{
+			font-weight: 600!important;
+			font-size: 14px;
+		}
