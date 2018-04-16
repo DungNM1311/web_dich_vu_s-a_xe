@@ -73,3 +73,8 @@ Route::group(['prefix'=>'DichVu'],function(){
 // Route::get('AddDichVu',['as'=>'AddDichVu','uses'=>'DichVuController@AddDichVu']);
 
 // Route::post('PostAddDichVu',['as'=>'PostAddDichVu','uses'=>'DichVuController@PostAddDichVu']);
+//trandang
+Route::get('/','PagesController@index');
+Route::get('/trogiup','PagesController@trogiup');
+Auth::routes();
+Route::get('/home', 'PagesController@index')->name('home');
