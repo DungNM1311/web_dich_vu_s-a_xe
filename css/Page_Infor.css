@@ -1,0 +1,105 @@
+body {
+    overflow-x: hidden;
+}
+
+.Background{
+
+  display: table;
+  width: 100vw;
+  height:40vw; 
+  background-color: #555;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url("https://getwrench.com/images/bg/suv.jpg");
+  padding-top: 10%;
+}
+.FormThongTin{
+  position: relative;
+  /* transform: translate(0,100px); */
+  width: 50%;
+  background-color: #fff;
+  box-shadow: 10px 10px 7px #111;
+  font-family: arial;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #222;
+  transform: translate(50%, -25%);
+  display: table;
+}
+
+.FormThongTin .ViewImage{
+  margin-bottom: 15px!important;
+  width: 33.33333333%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-size: 14px;
+}
+
+
+}
+
+.FormThongTin .ViewImage .Image{
+   margin-bottom: 15px!important;
+}
+
+.FormThongTin .ViewImage .Image img{
+  width: 80%;
+  vertical-align: middle;
+  line-height: 1.6;
+  display: block;
+}
+
+.FormThongTin .ViewImage .Rank font{
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+}
+
+.FromThongTin .Infor{
+  margin-bottom: 15px!important;
+  width: 56.66666667%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.FormThongTin .Infor h1{
+  text-align: left;
+  color: #f6303e;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 25px;
+  margin: 0;
+  padding: 0;
+  font-family: Noto Sans,Open Sans,Segoe UI,sans-serif;
+}
+
+.FormThongTin .Infor ul{
+  margin-top: 0;
+  margin-bottom: 10px;
+  display: block;
+  list-style-type: disc;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 40px;
+  font-size: 16px;
+}
+
+.FormThongTin .Infor p{
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  color: #555;
+  
+}
